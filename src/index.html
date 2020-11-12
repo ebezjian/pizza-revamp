@@ -6,4 +6,41 @@
   <title>TODO</title>
 </head>
 <body>
-  
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1> Order some Pizza</h1>
+    </div>
+  </div>
+  <form class="orderForm">
+  <div class="container1">
+    <div class="row">
+      <div class="col-md-2" id="leftSide">
+        <div class="orderList">
+        <h3>Items</h3>
+          <ul id="checkList"></ul>
+        </div>
+        <button type="submit" class="btn">Add and see your Total</button>  
+            <input type="text" id="totalCost"></input>  <!--.val-->
+      </div>
+      <div class="col-md-5" id="centerSide">
+        <h2>Create Your Pizza</h2>    
+      <select class="form-group" id="sizes"> <!--do (":selected") in user logic-->
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>  
+      </div>
+      <div class="col-md-5" id="rightSide">
+        <h2>Pick your Toppings</h2>
+        <select class="form-group" id="toppings">
+          <option value="none" class="meat">None</option>
+          <option value="chicken" class="meat">Chicken</option>
+          <option value="pepperoni" class="meat">Pepperoni</option>
+          <option value="steak" class="meat">Steak</option>
+        </select>
+        <h2>How many?</h2>
+        <div class="form-group">
+          <input type="number" name="amount" value="" id="amount"><!--.val-->
+        </div>
+  </form> 
+  </div>
